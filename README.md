@@ -39,3 +39,13 @@ This site is designed to be deployed via Ansible:
 
 📌 _This project is minimal by design. It's a sandbox for automation success and webserver verification._
 
+## ⚠️ Common Gotcha: HTTP vs HTTPS
+
+If you try to reload the page and suddenly find it “unreachable,” double-check that the browser hasn’t flipped the URL to https:// automatically.
+
+This site is served over HTTP, so make sure the link begins with `http://`
+
+```
+http://ip-address/
+http://192.168.0.124/
+```
